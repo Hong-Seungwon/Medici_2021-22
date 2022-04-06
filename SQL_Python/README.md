@@ -1,1 +1,1 @@
-# SQL 및 Python
+## SQL/Python Study
