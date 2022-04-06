@@ -1,7 +1,4 @@
-echo "# python_2021-22" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Hong-Seungwon/python_2021-22.git
-git push -u origin main
+# Python기반 AI를 활용한 빅데이터 분석가 양성 과정 (2021-10-29 ~ 2022-04-29)
+
+
+
