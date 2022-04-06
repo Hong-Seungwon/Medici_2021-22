@@ -1,0 +1,20 @@
+<books>
+    <book>
+        <author>Carson</author>
+        <price format="dollar">31.95</price>
+        <pubdate>05/01/2001</pubdate>
+    </book>
+    <pubinfo>
+        <publisher>MS Press</publisher>
+        <state>WA</state>
+    </pubinfo>
+    <book>
+        <author>Hong Gildong</author>
+        <price format="dollar">40.55</price>
+        <pubdate>05/07/2011</pubdate>
+    </book>
+    <pubinfo>
+        <publisher>Korea Press</publisher>
+        <state>Daejeon</state>
+    </pubinfo>
+</books>
