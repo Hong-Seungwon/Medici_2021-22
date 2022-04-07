@@ -107,3 +107,90 @@ SET 속성 이름1=값1[, 속성 이름2=값2, ...]
 DELETE FROM 테이블 이름
 [WHERE 검색 조건];
 ```
+
+## SQL 내장 함수
+```
+* 숫자 함수
+- ABS(숫자)
+  숫자의 절댓값을 계산 
+  ABS(-4.5) => 4.5
+
+- CEIL(숫자)
+  숫자보다 크거나 같은 최소의 정수 
+  CEIL(4.1) => 5
+  
+- FLOOR(숫자)
+  숫자보다 작거나 같은 최소의 정수 
+  FLOOR(4.1) => 4
+
+- ROUND(숫자, m)
+  숫자의 반올림, m은 반올림 기준 자릿수
+  ROUND(5.36, 1) => 5.40
+  
+- LOG(n, 숫자)
+  숫자의 자연로그 값을 반환
+  LOG(10) => 2.30259
+  
+- POWER(숫자, n)
+  숫자의 n제곱 값을 계산
+  POWER(2, 3) => 8
+  
+- SQRT(숫자)
+  숫자의 제곱근 값을 계산(숫자는 양수)
+  SQRT(9.0) => 3.0
+  
+- SIGN(숫자)
+  숫자가 음수면 -1, 0이면 0, 양수면 1 
+  SIGN(3.45) => 1
+
+* 문자 함수
+- CONCAT(s1,s2) 
+  두 문자열을 연결
+  CONCAT('마당', '서점') => '마당 서점'
+
+- LOWER(s)  
+  대상 문자열을 모두 소문자로 변환
+  LOWER('MR. SCOTT') => 'mr. scott'
+  
+- LPAD(s,n,c) 
+  대상 문자열의 왼쪽부터 지정한 자리수까지 지정한 문자로 채움
+  LPAD('Page 1', 10, '*') => '****Page 1'
+
+- REPLACE(s1,s2,s3)
+  대상 문자열의 지정한 문자를 원하는 문자로 변경
+  REPLACE('JACK & JUE', 'J', 'BL') => 'BLACK & BLUE'
+
+- RPAD(s,n,c)
+  대상 문자열의 오른쪽부터 지정한 자리수까지 지정한 문자로 채움
+  RPAD('AbC', 5, '*') => 'AbC**'
+
+- SUBSTR(s,n,k)
+  대상 문자열의 지정된 자리에서부터 지정된 길이만큼 잘라서 반환
+  SUBSTR('ABCDEFG', 3, 4) => 'CDEF'
+
+- TRIM(c FROM s)
+  대상 문자열의 양쪽에서 지정된 문자를 삭제(문자열만 넣으면 기본값으로 공백 제거)
+  TRIM('=' FROM '==BROWNING==') => 'BROWNING'
+
+- UPPER(s)
+ 대상 문자열을 모두 대문자로 변환
+ UPPER('mr. scott') => 'MR. SCOTT'
+ 
+- ASCII(c)
+  대상 알파벳 문자의 아스키 코드 값을 반환
+  ASCII('D') => 68  
+  
+- LENGTH(s)
+  대상 문자열의 Byte 반환, 알파벳 1byte, 한글 3byte (UTF8)
+  LENGTH('CANDIDE') => 7
+
+- CHAR_LENGTH(s)
+  문자열의 문자 수를 반환
+  CHAR_LENGTH('데이터') => 3
+
+
+  
+ 
+
+
+```
