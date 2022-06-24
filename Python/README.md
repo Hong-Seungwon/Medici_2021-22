@@ -6,7 +6,7 @@
   순차·비순차, 가변·불변, 인덱싱(indexing), 슬라이싱(slicing), 덧셈과 곱셈, 요소 확인
   - 연산자
   
-- Collectio
+- Collection
 - Class
 - Parser
 - Database
